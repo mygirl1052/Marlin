@@ -42,6 +42,9 @@
 //#define BTN_EN1        P1_23   // EXP2.5
 //#define BTN_EN2        P1_22   // EXP2.3
 
+#undef HEATER_1_PIN
+#define FAN1_PIN      P2_06
+
 #if HAS_DRIVER(TMC2208)
   // The shortage of pins becomes apparent.
   // In the worst case you may have to give up the LCD.
