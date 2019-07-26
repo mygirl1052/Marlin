@@ -41,6 +41,10 @@
 #undef sq
 #define sq(x) ((x)*(x))
 
+#ifndef vsnprintf_P
+  #define vsnprintf_P vsnprintf
+#endif
+
 #ifndef SBI
   #define SBI(A,B) (A |= (1 << (B)))
 #endif
@@ -64,3 +68,7 @@
 #define RST_JTAG       16
 #define RST_SOFTWARE   32
 #define RST_BACKUP     64
+
+#ifndef M_PI
+  #define M_PI 3.14159265358979323846f
+#endif
